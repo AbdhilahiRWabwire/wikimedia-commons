@@ -98,7 +98,7 @@ dependencies {
     testImplementation "androidx.arch.core:core-testing:2.2.0"
     testImplementation "org.junit.jupiter:junit-jupiter-api:5.10.2"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.10.2"
-    testImplementation 'com.facebook.soloader:soloader:0.10.5'
+    testImplementation 'com.facebook.soloader:soloader:0.11.0'
     testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3"
     debugImplementation("androidx.fragment:fragment-testing:1.6.2")
     testImplementation "commons-io:commons-io:2.15.1"
