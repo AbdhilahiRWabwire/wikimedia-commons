@@ -41,14 +41,14 @@ open class OnSwipeTouchListener(context: Context?) : View.OnTouchListener {
         /**
          * Detects the gestures
          */
-        fun onFling(
-            event1: MotionEvent,
+        override fun onFling(
+            event1: MotionEvent?,
             event2: MotionEvent,
             velocityX: Float,
             velocityY: Float
         ): Boolean {
             try {
-                val diffY: Float = event2.y - event1.y
+                val diffY: Float = event2.y - event1?.y!!
                 val diffX: Float = event2.x - event1.x
                 if (abs(diffX) > abs(diffY)) {
                     if (abs(diffX) > SWIPE_THRESHOLD_WIDTH && abs(velocityX) >
