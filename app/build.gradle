@@ -188,6 +188,10 @@ project.gradle.taskGraph.whenReady {
 }
 
 android {
+    dataBinding {
+        enabled = true
+    }
+    
     compileSdkVersion 34
 
     defaultConfig {
