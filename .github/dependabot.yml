@@ -26,10 +26,9 @@ updates:
       interval: "weekly"
       time: "03:00"
     ignore:
-      - dependency-name: "com.squareup.retrofit2"
-      - dependency-name: "io.reactivex.rxjava2"
-      - dependency-name: "com.jakewharton.rxbinding2"
-      - dependency-name: "com.jakewharton.rxbinding3"
+      - dependency-name: "com.squareup"
+      - dependency-name: "io.reactivex"
+      - dependency-name: "com.jakewharton"
 
   - package-ecosystem: "maven"
     commit-message:
@@ -49,9 +48,8 @@ updates:
       interval: "weekly"
       time: "03:00"
     ignore:
-      - dependency-name: "com.squareup.retrofit2"
-      - dependency-name: "io.reactivex.rxjava2"
-      - dependency-name: "com.jakewharton.rxbinding2"
-      - dependency-name: "com.jakewharton.rxbinding3"
+      - dependency-name: "com.squareup"
+      - dependency-name: "io.reactivex"
+      - dependency-name: "com.jakewharton"
       
 version: 2
