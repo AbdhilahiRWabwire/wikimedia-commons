@@ -33,8 +33,7 @@
       android:textSize="@dimen/description_text_size"
       android:layout_marginBottom="@dimen/dimen_10"
       tools:text="[File:Hello.jpg|Hello]"
-      android:inputType="text"
-      android:autofillHints="" />
+      android:inputType="text" />
 
     <TextView
       android:layout_width="match_parent"
