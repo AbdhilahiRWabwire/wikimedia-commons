@@ -33,7 +33,8 @@
       android:textSize="@dimen/description_text_size"
       android:layout_marginBottom="@dimen/dimen_10"
       tools:text="[File:Hello.jpg|Hello]"
-      android:inputType="text" />
+      android:inputType="text"
+      android:autofillHints="" />
 
     <TextView
       android:layout_width="match_parent"
@@ -93,7 +94,8 @@
         android:backgroundTint="@color/white"
         android:layout_weight="1"
         android:layout_margin="@dimen/dimen_6"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonBarButtonStyle" />
 
       <Button
         android:id="@+id/instructions_confirm"
@@ -103,7 +105,8 @@
         android:padding="@dimen/dimen_10"
         android:layout_weight="1"
         android:layout_margin="@dimen/dimen_6"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonBarButtonStyle" />
     </LinearLayout>
 
   </LinearLayout>

@@ -4,7 +4,7 @@ jacoco {
     toolVersion = "0.8.10"
 }
 
-tasks.withType(Test) {
+tasks.withType(Test).configureEach {
     jacoco.includeNoLocationClasses = true
     jacoco.excludes = ['jdk.internal.*']
     // see related issue https://github.com/gradle/gradle/issues/5184#issuecomment-457865951
@@ -85,7 +85,7 @@ project.afterEvaluate {
                         '**/**/zoomControllers/*',
                 ]
 
-                tasks.create(name: "${unitTestTask}UnifiedCoverage", type: JacocoReport, dependsOn: [
+                tasks.register(name: "${unitTestTask}UnifiedCoverage", type: JacocoReport, dependsOn: [
                         "$unitTestTask",
                         "$androidTestCoverageTask",
                 ]) {
@@ -124,7 +124,7 @@ project.afterEvaluate {
                     ]))
                 }
 
-                tasks.create(name: "${unitTestTask}Coverage", type: JacocoReport, dependsOn: [
+                tasks.register(name: "${unitTestTask}Coverage", type: JacocoReport, dependsOn: [
                         "$unitTestTask"
                 ]) {
                     group = "Reporting"
