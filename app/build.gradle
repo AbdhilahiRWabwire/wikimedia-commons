@@ -8,10 +8,6 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-parcelize'
 apply from: "$rootDir/jacoco.gradle"
 
-kapt {
-    generateStubs = true
-}
-
 def isRunningOnTravisAndIsNotPRBuild = System.getenv("CI") == "true" && file('../play.p12').exists()
 
 if (isRunningOnTravisAndIsNotPRBuild) {
@@ -192,6 +188,10 @@ project.gradle.taskGraph.whenReady {
 }
 
 android {
+    kapt {
+        generateStubs = true
+    }
+
     dataBinding {
         enabled = true
     }
