@@ -85,7 +85,7 @@ project.afterEvaluate {
                         '**/**/zoomControllers/*',
                 ]
 
-                tasks.register(name: "${unitTestTask}UnifiedCoverage", type: JacocoReport, dependsOn: [
+                tasks.create(name: "${unitTestTask}UnifiedCoverage", type: JacocoReport, dependsOn: [
                         "$unitTestTask",
                         "$androidTestCoverageTask",
                 ]) {
@@ -124,7 +124,7 @@ project.afterEvaluate {
                     ]))
                 }
 
-                tasks.register(name: "${unitTestTask}Coverage", type: JacocoReport, dependsOn: [
+                tasks.create(name: "${unitTestTask}Coverage", type: JacocoReport, dependsOn: [
                         "$unitTestTask"
                 ]) {
                     group = "Reporting"
