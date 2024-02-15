@@ -175,7 +175,7 @@ dependencies {
     }
 }
 
-tasks.register('disableAnimations', Exec) {
+task disableAnimations(type: Exec) {
     def adb = "$System.env.ANDROID_HOME/platform-tools/adb"
     commandLine "$adb", 'shell', 'settings', 'put', 'global', 'window_animation_scale', '0'
     commandLine "$adb", 'shell', 'settings', 'put', 'global', 'transition_animation_scale', '0'
