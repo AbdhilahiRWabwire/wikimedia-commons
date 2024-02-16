@@ -191,8 +191,7 @@ project.gradle.taskGraph.whenReady {
 android {
     kapt {
         correctErrorTypes = true
-        showProcessorStats = true
-        useBuildCache = true
+        useBuildCache = false
     }
 
     dataBinding {
