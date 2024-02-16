@@ -1,7 +1,7 @@
 plugins {
-    id 'com.github.triplet.play' version '3.9.0' apply false
-    id 'com.google.devtools.ksp' version '1.9.22-1.0.17' apply false
-    id "org.jetbrains.kotlin.kapt" version "1.9.22"
+    id 'com.github.triplet.play'
+    id 'com.google.devtools.ksp' 
+    id 'org.jetbrains.kotlin.kapt'
 }
 apply from: '../gitutils.gradle'
 apply plugin: 'com.android.application'
