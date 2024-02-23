@@ -114,7 +114,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.annotation:annotation:1.7.1'
     androidTestImplementation 'com.squareup.okhttp3:mockwebserver:4.12.0'
-    androidTestImplementation "androidx.test.uiautomator:uiautomator:2.2.0"
+    androidTestImplementation "androidx.test.uiautomator:uiautomator:2.3.0"
     androidTestUtil 'androidx.test:orchestrator:1.4.2'
 
     // Debugging
