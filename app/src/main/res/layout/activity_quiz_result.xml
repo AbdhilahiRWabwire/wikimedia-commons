@@ -53,7 +53,8 @@
                         app:progress_stroke_width="@dimen/first_fab"
                         app:progress_text_size="@dimen/large_gap"
                         app:progress_text_format_pattern="4/5"
-                        app:style="solid_line" />
+                        app:style="solid_line"
+                        android:id="@+id/result_progress_bar"/>
 
                     <TextView
                         android:layout_width="match_parent"
