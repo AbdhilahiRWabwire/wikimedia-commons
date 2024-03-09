@@ -40,7 +40,7 @@ annotation. For instance,
 @Singleton
 public SessionManager providesSessionManager(MediaWikiApi okHttpJsonApiClient) {
     return new SessionManager(application,okHttpJsonApiClient);
-  }
+}
 ```
 
 If your code injects an interface (in this case, `MediaWikiApi`) then Dagger needs to know which
@@ -51,5 +51,5 @@ concrete class to use. This comes by way of a provider method:
 @Singleton
 public MediaWikiApi provideMediaWikiApi() {
     return new ApacheHttpClientMediaWikiApi(BuildConfig.WIKIMEDIA_API_HOST);
-  }
+}
 ```
