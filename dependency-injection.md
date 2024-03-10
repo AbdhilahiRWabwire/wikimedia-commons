@@ -39,7 +39,7 @@ annotation. For instance,
 @Provides
 @Singleton
 public SessionManager providesSessionManager(MediaWikiApi okHttpJsonApiClient) {
-    return new SessionManager(application,okHttpJsonApiClient);
+    return new SessionManager(application, okHttpJsonApiClient);
 }
 ```
 
