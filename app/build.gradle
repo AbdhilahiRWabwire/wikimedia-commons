@@ -21,7 +21,6 @@ dependencies {
     def androidx_compose = "1.6.3"
     def androidx_lifecycle = "2.7.0"
     def com_google_accompanist = "0.35.0-alpha"
-    def org_jetbrains_compose = "1.6.0"
     def org_jetbrains_kotlinx_coroutines = "1.8.0"
 
     // Jetpack Compose
@@ -41,21 +40,21 @@ dependencies {
     implementation 'androidx.navigation:navigation-compose:2.7.7'
     implementation 'androidx.paging:paging-compose:3.2.1'
     implementation 'com.google.accompanist:accompanist-adaptive:$com_google_accompanist'
-    implementation 'com.google.accompanist:accompanist-drawablepainter:$com_google_accompanist'
-    implementation 'com.google.accompanist:accompanist-navigation-material:$com_google_accompanist'
-    implementation 'com.google.accompanist:accompanist-permissions:$com_google_accompanist'
+    implementation 'com.google.accompanist:accompanist-drawablepainter:0.35.0-alpha'
+    implementation 'com.google.accompanist:accompanist-navigation-material:0.35.0-alpha'
+    implementation 'com.google.accompanist:accompanist-permissions:0.35.0-alpha'
     implementation 'com.google.android.material:compose-theme-adapter:1.2.1'
     implementation 'com.google.android.material:compose-theme-adapter-3:1.1.1'
     implementation 'com.google.android.material:compose-theme-adapter-core:1.0.1'
     // Compose Multiplatform
-    implementation 'org.jetbrains.compose.animation:animation:$org_jetbrains_compose'
-    implementation 'org.jetbrains.compose.desktop:desktop:$org_jetbrains_compose'
-    implementation 'org.jetbrains.compose.foundation:foundation:$org_jetbrains_compose'
-    implementation 'org.jetbrains.compose.html:html-core:$org_jetbrains_compose'
-    implementation 'org.jetbrains.compose.material:material:$org_jetbrains_compose'
-    implementation 'org.jetbrains.compose.material3:material3:$org_jetbrains_compose'
-    implementation 'org.jetbrains.compose.runtime:runtime:$org_jetbrains_compose'
-    implementation 'org.jetbrains.compose.ui:ui:$org_jetbrains_compose'
+    implementation 'org.jetbrains.compose.animation:animation:1.6.0'
+    implementation 'org.jetbrains.compose.desktop:desktop:1.6.0'
+    implementation 'org.jetbrains.compose.foundation:foundation:1.6.0'
+    implementation 'org.jetbrains.compose.html:html-core:1.6.0'
+    implementation 'org.jetbrains.compose.material:material:1.6.0'
+    implementation 'org.jetbrains.compose.material3:material3:1.6.0'
+    implementation 'org.jetbrains.compose.runtime:runtime:1.6.0'
+    implementation 'org.jetbrains.compose.ui:ui:1.6.0'
     // Compose Tests
     testImplementation 'androidx.compose.ui:ui-test:$androidx_compose'
     testImplementation 'com.google.accompanist:accompanist-testharness:$com_google_accompanist'
