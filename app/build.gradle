@@ -103,7 +103,7 @@ dependencies {
     implementation "com.jakewharton:butterknife:$com_jakewharton_butterknife"
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
 
-    kapt "com.jakewharton:butterknife-compiler:$com_jakewharton_butterknife"
+    ksp "com.jakewharton:butterknife-compiler:$com_jakewharton_butterknife"
     implementation "com.hannesdorfmann:adapterdelegates4-kotlin-dsl-viewbinding:$com_hannesdorfmann_adapterdelegates4"
     implementation "com.hannesdorfmann:adapterdelegates4-pagination:$com_hannesdorfmann_adapterdelegates4"
     implementation "androidx.paging:paging-runtime-ktx:$androidx_paging"
@@ -124,8 +124,8 @@ dependencies {
     // Dependency injector
     implementation "com.google.dagger:dagger-android:$com_google_dagger"
     implementation "com.google.dagger:dagger-android-support:$com_google_dagger"
-    kapt "com.google.dagger:dagger-android-processor:$com_google_dagger"
-    kapt "com.google.dagger:dagger-compiler:$com_google_dagger"
+    ksp "com.google.dagger:dagger-android-processor:$com_google_dagger"
+    ksp "com.google.dagger:dagger-compiler:$com_google_dagger"
     annotationProcessor "com.google.dagger:dagger-android-processor:$com_google_dagger"
 
     implementation 'org.jetbrains.kotlin:kotlin-reflect:1.9.22'
@@ -186,7 +186,7 @@ dependencies {
     implementation "androidx.room:room-runtime:$androidx_room"
     implementation "androidx.room:room-ktx:$androidx_room"
     implementation "androidx.room:room-rxjava2:$androidx_room"
-    kapt "androidx.room:room-compiler:$androidx_room"
+    ksp "androidx.room:room-compiler:$androidx_room"
     // For Kotlin use ksp instead of annotationProcessor
     testImplementation 'androidx.arch.core:core-testing:2.2.0'
 
@@ -207,7 +207,7 @@ dependencies {
 
     //Glide
     implementation 'com.github.bumptech.glide:glide:4.16.0'
-    kapt 'com.github.bumptech.glide:compiler:4.16.0'
+    ksp 'com.github.bumptech.glide:compiler:4.16.0'
     kaptTest 'androidx.databinding:databinding-compiler:8.3.0'
     kaptAndroidTest 'androidx.databinding:databinding-compiler:8.3.0'
 

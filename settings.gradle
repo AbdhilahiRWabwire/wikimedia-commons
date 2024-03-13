@@ -17,6 +17,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "WikimediaCommons"
-
 include ':app'
+
+rootProject.name = "WikimediaCommons"
