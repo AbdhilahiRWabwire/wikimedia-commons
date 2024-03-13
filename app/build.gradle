@@ -1,11 +1,12 @@
 plugins {
     id 'com.android.application'
+    id 'com.getkeepsafe.dexcount'
     id 'com.google.devtools.ksp'
     id 'com.github.triplet.play'
+    id 'org.codehaus.groovy.android'
     id 'org.gradle.android.cache-fix'
     id 'org.jetbrains.compose'
     id 'org.jetbrains.kotlin.android'
-    id 'org.jetbrains.kotlin.kapt'
     id 'org.jetbrains.kotlin.plugin.parcelize'
 }
 apply from: '../gitutils.gradle'
@@ -208,8 +209,7 @@ dependencies {
     //Glide
     implementation 'com.github.bumptech.glide:glide:4.16.0'
     ksp 'com.github.bumptech.glide:compiler:4.16.0'
-    kaptTest 'androidx.databinding:databinding-compiler:8.3.0'
-    kaptAndroidTest 'androidx.databinding:databinding-compiler:8.3.0'
+    ksp 'androidx.databinding:databinding-compiler:8.3.0'
 
     implementation("io.github.coordinates2country:coordinates2country-android:1.6") { exclude group: 'com.google.android', module: 'android' }
 
@@ -240,11 +240,6 @@ project.gradle.taskGraph.whenReady {
 android {
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.10"
-    }
-
-    kapt {
-        correctErrorTypes = true
-        useBuildCache = false
     }
 
     dataBinding {
