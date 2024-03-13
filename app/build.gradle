@@ -19,50 +19,58 @@ if (isRunningOnTravisAndIsNotPRBuild) {
 
 dependencies {
     def androidx_compose = "1.6.3"
+    def androidx_paging = "3.2.1"
+    def androidx_preference = "1.2.1"
+    def androidx_room = "2.6.1"
     def androidx_lifecycle = "2.7.0"
+    def androidx_work = "2.9.0"
     def com_google_accompanist = "0.35.0-alpha"
-    def org_jetbrains_kotlinx_coroutines = "1.8.0"
+    def com_google_dagger = "2.50"
+    def com_hannesdorfmann_adapterdelegates4 = "4.3.2"
+    def com_jakewharton_butterknife = "10.2.3"
+    def com_squareup_okhttp3 = "4.12.0"
+    def org_jetbrains_compose = "1.6.0"
 
     // Jetpack Compose
     implementation 'androidx.activity:activity-compose:1.8.2'
-    implementation 'androidx.compose.animation:animation:$androidx_compose'
+    implementation "androidx.compose.animation:animation:$androidx_compose"
     implementation 'androidx.compose.compiler:compiler:1.5.10'
-    implementation 'androidx.compose.foundation:foundation:$androidx_compose'
-    implementation 'androidx.compose.material:material:$androidx_compose'
+    implementation "androidx.compose.foundation:foundation:$androidx_compose"
+    implementation "androidx.compose.material:material:$androidx_compose"
     implementation 'androidx.compose.material3:material3:1.2.1'
-    implementation 'androidx.compose.runtime:runtime:$androidx_compose'
-    implementation 'androidx.compose.ui:ui:$androidx_compose'
-    implementation 'androidx.compose.ui:ui-tooling-preview:$androidx_compose'
+    implementation "androidx.compose.runtime:runtime:$androidx_compose"
+    implementation "androidx.compose.ui:ui:$androidx_compose"
+    implementation "androidx.compose.ui:ui-tooling-preview:$androidx_compose"
     implementation 'androidx.constraintlayout:constraintlayout-compose:1.0.1'
     implementation 'androidx.core:core-ktx:1.12.0'
-    implementation 'androidx.lifecycle:lifecycle-runtime-compose:$androidx_lifecycle'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:$androidx_lifecycle'
+    implementation "androidx.lifecycle:lifecycle-runtime-compose:$androidx_lifecycle"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$androidx_lifecycle"
     implementation 'androidx.navigation:navigation-compose:2.7.7'
     implementation 'androidx.paging:paging-compose:3.2.1'
-    implementation 'com.google.accompanist:accompanist-adaptive:0.35.0-alpha'
-    implementation 'com.google.accompanist:accompanist-drawablepainter:0.35.0-alpha'
-    implementation 'com.google.accompanist:accompanist-navigation-material:0.35.0-alpha'
-    implementation 'com.google.accompanist:accompanist-permissions:0.35.0-alpha'
-    implementation 'com.google.android.material:compose-theme-adapter:1.2.1'
-    implementation 'com.google.android.material:compose-theme-adapter-3:1.1.1'
-    implementation 'com.google.android.material:compose-theme-adapter-core:1.0.1'
+    implementation "com.google.accompanist:accompanist-adaptive:$com_google_accompanist"
+    implementation "com.google.accompanist:accompanist-drawablepainter:$com_google_accompanist"
+    implementation "com.google.accompanist:accompanist-navigation-material:$com_google_accompanist"
+    implementation "com.google.accompanist:accompanist-permissions:$com_google_accompanist"
+    implementation "com.google.android.material:compose-theme-adapter:$com_google_accompanist"
+    implementation "com.google.android.material:compose-theme-adapter-3:$com_google_accompanist"
+    implementation "com.google.android.material:compose-theme-adapter-core:$com_google_accompanist"
     // Compose Multiplatform
-    implementation 'org.jetbrains.compose.animation:animation:1.6.0'
-    implementation 'org.jetbrains.compose.desktop:desktop:1.6.0'
-    implementation 'org.jetbrains.compose.foundation:foundation:1.6.0'
-    implementation 'org.jetbrains.compose.html:html-core:1.6.0'
-    implementation 'org.jetbrains.compose.material:material:1.6.0'
-    implementation 'org.jetbrains.compose.material3:material3:1.6.0'
-    implementation 'org.jetbrains.compose.runtime:runtime:1.6.0'
-    implementation 'org.jetbrains.compose.ui:ui:1.6.0'
+    implementation "org.jetbrains.compose.animation:animation:$org_jetbrains_compose"
+    implementation "org.jetbrains.compose.desktop:desktop:$org_jetbrains_compose"
+    implementation "org.jetbrains.compose.foundation:foundation:$org_jetbrains_compose"
+    implementation "org.jetbrains.compose.html:html-core:$org_jetbrains_compose"
+    implementation "org.jetbrains.compose.material:material:$org_jetbrains_compose"
+    implementation "org.jetbrains.compose.material3:material3:$org_jetbrains_compose"
+    implementation "org.jetbrains.compose.runtime:runtime:$org_jetbrains_compose"
+    implementation "org.jetbrains.compose.ui:ui:$org_jetbrains_compose"
     // Compose Tests
-    testImplementation 'androidx.compose.ui:ui-test:$androidx_compose'
-    testImplementation 'com.google.accompanist:accompanist-testharness:$com_google_accompanist'
+    testImplementation "androidx.compose.ui:ui-test:$androidx_compose"
+    testImplementation "com.google.accompanist:accompanist-testharness:$com_google_accompanist"
 
     // Utils
     implementation 'in.yuvi:http.fluent:1.3'
     implementation 'com.google.code.gson:gson:2.10.1'
-    implementation("com.squareup.okhttp3:okhttp:$OKHTTP_VERSION!!") {
+    implementation("com.squareup.okhttp3:okhttp:$com_squareup_okhttp3!!") {
         // Forcing dependency versions using force = true on a first-level dependency has been deprecated.
         //  Ref: https://docs.gradle.org/7.5/userguide/upgrading_version_5.html#forced_dependencies
         //force = true //API 19 support
@@ -71,8 +79,8 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.8.1'
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.8.1'
     implementation 'com.squareup.okio:okio:3.8.0'
-    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
-    implementation 'io.reactivex.rxjava2:rxjava:2.2.3'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.10'
     implementation 'com.jakewharton.rxbinding2:rxbinding:2.1.1'
     implementation 'com.jakewharton.rxbinding3:rxbinding-appcompat:3.0.0'
     implementation 'com.jakewharton.rxbinding2:rxbinding-support-v4:2.1.1'
@@ -85,24 +93,24 @@ dependencies {
     implementation 'fr.avianey.com.viewpagerindicator:library:2.4.1.1@aar'
     implementation 'com.github.chrisbanes:PhotoView:2.3.0'
     implementation 'com.github.pedrovgs:renderers:4.1.0'
-    implementation "org.maplibre.gl:android-sdk:$MAPLIBRE_VERSION"
+    implementation 'org.maplibre.gl:android-sdk:10.2.0'
     implementation 'org.maplibre.gl:android-plugin-scalebar-v9:2.0.2'
 
     implementation 'com.jakewharton.timber:timber:5.0.1'
     implementation 'com.github.deano2390:MaterialShowcaseView:1.3.7'
     implementation 'com.dinuscxj:circleprogressbar:1.3.6'
     implementation 'com.karumi:dexter:6.2.3'
-    implementation "com.jakewharton:butterknife:$BUTTERKNIFE_VERSION"
+    implementation "com.jakewharton:butterknife:$com_jakewharton_butterknife"
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
 
-    kapt "com.jakewharton:butterknife-compiler:$BUTTERKNIFE_VERSION"
-    implementation "com.hannesdorfmann:adapterdelegates4-kotlin-dsl-viewbinding:$ADAPTER_DELEGATES_VERSION"
-    implementation "com.hannesdorfmann:adapterdelegates4-pagination:$ADAPTER_DELEGATES_VERSION"
-    implementation "androidx.paging:paging-runtime-ktx:$PAGING_VERSION"
-    testImplementation "androidx.paging:paging-common-ktx:$PAGING_VERSION"
-    implementation "androidx.paging:paging-rxjava2-ktx:$PAGING_VERSION"
-    implementation "androidx.recyclerview:recyclerview:1.3.2"
-    implementation "com.squareup.okhttp3:okhttp-ws:$OKHTTP_VERSION"
+    kapt "com.jakewharton:butterknife-compiler:$com_jakewharton_butterknife"
+    implementation "com.hannesdorfmann:adapterdelegates4-kotlin-dsl-viewbinding:$com_hannesdorfmann_adapterdelegates4"
+    implementation "com.hannesdorfmann:adapterdelegates4-pagination:$com_hannesdorfmann_adapterdelegates4"
+    implementation "androidx.paging:paging-runtime-ktx:$androidx_paging"
+    testImplementation "androidx.paging:paging-common-ktx:$androidx_paging"
+    implementation "androidx.paging:paging-rxjava2-ktx:$androidx_paging"
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation "com.squareup.okhttp3:okhttp-ws:$com_squareup_okhttp3"
 
     // Logging
     implementation 'ch.acra:acra-dialog:5.11.3'
@@ -111,40 +119,40 @@ dependencies {
     api('com.github.tony19:logback-android-classic:1.1.1-6') {
         exclude group: 'com.google.android', module: 'android'
     }
-    implementation "com.squareup.okhttp3:logging-interceptor:$OKHTTP_VERSION"
+    implementation "com.squareup.okhttp3:logging-interceptor:$com_squareup_okhttp3"
 
     // Dependency injector
-    implementation "com.google.dagger:dagger-android:$DAGGER_VERSION"
-    implementation "com.google.dagger:dagger-android-support:$DAGGER_VERSION"
-    kapt "com.google.dagger:dagger-android-processor:$DAGGER_VERSION"
-    kapt "com.google.dagger:dagger-compiler:$DAGGER_VERSION"
-    annotationProcessor "com.google.dagger:dagger-android-processor:$DAGGER_VERSION"
+    implementation "com.google.dagger:dagger-android:$com_google_dagger"
+    implementation "com.google.dagger:dagger-android-support:$com_google_dagger"
+    kapt "com.google.dagger:dagger-android-processor:$com_google_dagger"
+    kapt "com.google.dagger:dagger-compiler:$com_google_dagger"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$com_google_dagger"
 
-    implementation "org.jetbrains.kotlin:kotlin-reflect:$KOTLIN_VERSION"
+    implementation 'org.jetbrains.kotlin:kotlin-reflect:1.9.22'
 
     //Mocking
     testImplementation 'com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0'
     testImplementation 'org.mockito:mockito-inline:5.2.0'
     testImplementation 'org.mockito:mockito-core:5.11.0'
-    testImplementation "org.powermock:powermock-module-junit4:2.0.9"
-    testImplementation "org.powermock:powermock-api-mockito2:2.0.9"
+    testImplementation 'org.powermock:powermock-module-junit4:2.0.9'
+    testImplementation 'org.powermock:powermock-api-mockito2:2.0.9'
 
     // Unit testing
     testImplementation 'junit:junit:4.13.2'
     testImplementation 'org.robolectric:robolectric:4.11.1'
     testImplementation 'androidx.test:core:1.5.0'
-    testImplementation "androidx.test:runner:1.5.2"
+    testImplementation 'androidx.test:runner:1.5.2'
     testImplementation 'androidx.test.ext:junit:1.1.5'
-    testImplementation "androidx.test:rules:1.5.0"
-    testImplementation "com.squareup.okhttp3:mockwebserver:$OKHTTP_VERSION"
-    testImplementation "com.jraska.livedata:testing-ktx:1.3.0"
-    testImplementation "androidx.arch.core:core-testing:2.2.0"
-    testImplementation "org.junit.jupiter:junit-jupiter-api:5.10.2"
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.10.2"
+    testImplementation 'androidx.test:rules:1.5.0'
+    testImplementation "com.squareup.okhttp3:mockwebserver:$com_squareup_okhttp3"
+    testImplementation 'com.jraska.livedata:testing-ktx:1.3.0'
+    testImplementation 'androidx.arch.core:core-testing:2.2.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.2'
     testImplementation 'com.facebook.soloader:soloader:0.11.0'
-    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.8.0"
+    testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.8.0'
     debugImplementation("androidx.fragment:fragment-testing:1.6.2")
-    testImplementation "commons-io:commons-io:2.15.1"
+    testImplementation 'commons-io:commons-io:2.15.1'
 
     // Android testing
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
@@ -156,58 +164,57 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.annotation:annotation:1.7.1'
     androidTestImplementation 'com.squareup.okhttp3:mockwebserver:4.12.0'
-    androidTestImplementation "androidx.test.uiautomator:uiautomator:2.3.0"
+    androidTestImplementation 'androidx.test.uiautomator:uiautomator:2.3.0'
     androidTestUtil 'androidx.test:orchestrator:1.4.2'
 
     // Debugging
-    debugImplementation "com.squareup.leakcanary:leakcanary-android:$LEAK_CANARY_VERSION"
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.13'
 
     // Support libraries
-    implementation "com.google.android.material:material:1.11.0"
-    implementation "androidx.browser:browser:1.8.0"
-    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.browser:browser:1.8.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation "androidx.exifinterface:exifinterface:1.3.7"
-    implementation "androidx.core:core-ktx:$CORE_KTX_VERSION"
+    implementation 'androidx.exifinterface:exifinterface:1.3.7'
+    implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'com.simplecityapps:recyclerview-fastscroll:2.0.1'
 
     //swipe_layout
     implementation 'com.daimajia.swipelayout:library:1.2.0@aar'
 
     //Room
-    implementation "androidx.room:room-runtime:$ROOM_VERSION"
-    implementation "androidx.room:room-ktx:$ROOM_VERSION"
-    implementation "androidx.room:room-rxjava2:$ROOM_VERSION"
-    kapt "androidx.room:room-compiler:$ROOM_VERSION"
+    implementation "androidx.room:room-runtime:$androidx_room"
+    implementation "androidx.room:room-ktx:$androidx_room"
+    implementation "androidx.room:room-rxjava2:$androidx_room"
+    kapt "androidx.room:room-compiler:$androidx_room"
     // For Kotlin use ksp instead of annotationProcessor
-    testImplementation "androidx.arch.core:core-testing:2.2.0"
+    testImplementation 'androidx.arch.core:core-testing:2.2.0'
 
     // Pref
     // Java language implementation
-    implementation "androidx.preference:preference:$PREFERENCE_VERSION"
+    implementation "androidx.preference:preference:$androidx_preference"
     // Kotlin
-    implementation "androidx.preference:preference-ktx:$PREFERENCE_VERSION"
+    implementation "androidx.preference:preference-ktx:$androidx_preference"
     //Android Media
     implementation 'com.github.juanitobananas:AndroidMediaUtil:v1.0-1'
 
-    implementation "androidx.multidex:multidex:$MULTIDEX_VERSION"
+    implementation 'androidx.multidex:multidex:2.0.1'
 
-    def work_version = "2.9.0"
     // Kotlin + coroutines
-    implementation "androidx.work:work-runtime-ktx:$work_version"
-    implementation("androidx.work:work-runtime:$work_version")
-    testImplementation "androidx.work:work-testing:$work_version"
+    implementation "androidx.work:work-runtime-ktx:$androidx_work"
+    implementation("androidx.work:work-runtime:$androidx_work")
+    testImplementation "androidx.work:work-testing:$androidx_work"
 
     //Glide
     implementation 'com.github.bumptech.glide:glide:4.16.0'
     kapt 'com.github.bumptech.glide:compiler:4.16.0'
-    kaptTest "androidx.databinding:databinding-compiler:8.2.2"
-    kaptAndroidTest "androidx.databinding:databinding-compiler:8.2.2"
+    kaptTest 'androidx.databinding:databinding-compiler:8.3.0'
+    kaptAndroidTest 'androidx.databinding:databinding-compiler:8.3.0'
 
     implementation("io.github.coordinates2country:coordinates2country-android:1.6") { exclude group: 'com.google.android', module: 'android' }
 
     //OSMDroid
-    implementation("org.osmdroid:osmdroid-android:$OSMDROID_VERSION")
+    implementation("org.osmdroid:osmdroid-android:6.1.18")
     constraints {
         implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.22") {
             because("kotlin-stdlib-jdk7 is now a part of kotlin-stdlib")
@@ -415,7 +422,7 @@ android {
         jvmTarget = "17"
     }
 
-    buildToolsVersion buildToolsVersion
+    buildToolsVersion '34.0.0'
 
     buildFeatures {
         buildConfig = true
@@ -427,6 +434,7 @@ android {
         abortOnError false
         disable 'MissingTranslation', 'ExtraTranslation'
     }
+    ndkVersion '26.2.11394342'
 }
 
 String getTestUserName() {
