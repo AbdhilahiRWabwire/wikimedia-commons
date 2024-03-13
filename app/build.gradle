@@ -1,13 +1,13 @@
 plugins {
-    id 'com.github.triplet.play' version '3.9.0' apply false
-    id 'com.google.devtools.ksp' version '1.9.22-1.0.18' apply false
-    id 'org.gradle.android.cache-fix' version '3.0.1' apply false
-    id 'org.jetbrains.compose' version '1.6.0' apply false
-    id 'org.jetbrains.kotlin.multiplatform' version '1.9.22' apply false
+    id 'com.android.application'
+    id 'com.google.devtools.ksp'
+    id 'com.github.triplet.play'
+    id 'org.gradle.android.cache-fix'
+    id 'org.jetbrains.compose'
+    id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.kotlin.kapt'
+    id 'org.jetbrains.kotlin.plugin.parcelize'
 }
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-kapt'
-apply plugin: 'kotlin-parcelize'
 apply from: '../gitutils.gradle'
 apply from: "$rootDir/jacoco.gradle"
 
