@@ -18,23 +18,23 @@ if (isRunningOnTravisAndIsNotPRBuild) {
     apply plugin: 'com.github.triplet.play'
 }
 
-dependencies {
-    def androidx_compose = "1.6.3"
-    def androidx_paging = "3.2.1"
-    def androidx_preference = "1.2.1"
-    def androidx_room = "2.6.1"
-    def androidx_lifecycle = "2.7.0"
-    def androidx_work = "2.9.0"
-    def com_google_accompanist = "0.35.0-alpha"
-    def com_google_dagger = "2.50"
-    def com_hannesdorfmann_adapterdelegates4 = "4.3.2"
-    def com_jakewharton_butterknife = "10.2.3"
-    def com_squareup_okhttp3 = "4.12.0"
-    def org_jetbrains_compose = "1.6.0"
-    def org_jetbrains_kotlin = "1.9.22"
-    def org_jetbrains_kotlinx_coroutines = "1.8.0"
-    def org_jetbrains_kotlinx_io = "0.3.1"
+final androidx_compose = "1.6.3"
+final androidx_paging = "3.2.1"
+final androidx_preference = "1.2.1"
+final androidx_room = "2.6.1"
+final androidx_lifecycle = "2.7.0"
+final androidx_work = "2.9.0"
+final com_google_accompanist = "0.35.0-alpha"
+final com_google_dagger = "2.50"
+final com_hannesdorfmann_adapterdelegates4 = "4.3.2"
+final com_jakewharton_butterknife = "10.2.3"
+final com_squareup_okhttp3 = "4.12.0"
+final org_jetbrains_compose = "1.6.0"
+final org_jetbrains_kotlin = "1.9.22"
+final org_jetbrains_kotlinx_coroutines = "1.8.0"
+final org_jetbrains_kotlinx_io = "0.3.1"
 
+dependencies {
     // Jetpack Compose
     debugImplementation 'androidx.activity:activity-compose:1.8.2'
     debugImplementation "androidx.compose.animation:animation:$androidx_compose"
