@@ -7,7 +7,6 @@ plugins {
     id 'org.gradle.android.cache-fix'
     id 'org.jetbrains.compose'
     id 'org.jetbrains.kotlin.android'
-    id 'org.jetbrains.kotlin.kapt'
     id 'org.jetbrains.kotlin.plugin.parcelize'
 }
 apply from: '../gitutils.gradle'
@@ -233,10 +232,10 @@ dependencies {
     //OSMDroid
     implementation("org.osmdroid:osmdroid-android:6.1.18")
     constraints {
-        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.22") {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:$org_jetbrains_kotlin") {
             because("kotlin-stdlib-jdk7 is now a part of kotlin-stdlib")
         }
-        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.22") {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$org_jetbrains_kotlin") {
             because("kotlin-stdlib-jdk8 is now a part of kotlin-stdlib")
         }
     }
