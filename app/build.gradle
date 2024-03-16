@@ -25,7 +25,7 @@ final androidx_room = "2.6.1"
 final androidx_lifecycle = "2.7.0"
 final androidx_work = "2.9.0"
 final com_google_accompanist = "0.35.0-alpha"
-final com_google_dagger = "2.50"
+final com_google_dagger = "2.51"
 final adapter_delegates_4 = "4.3.2"
 final com_jakewharton_butterknife = "10.2.3"
 final com_squareup_okhttp3 = "4.12.0"
@@ -99,7 +99,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.8.1'
-    implementation 'com.squareup.okio:okio:3.8.0'
+    implementation 'com.squareup.okio:okio:3.9.0'
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
     implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
     implementation 'com.jakewharton.rxbinding2:rxbinding:2.1.1'
@@ -114,7 +114,7 @@ dependencies {
     implementation 'fr.avianey.com.viewpagerindicator:library:2.4.1.1@aar'
     implementation 'com.github.chrisbanes:PhotoView:2.3.0'
     implementation 'com.github.pedrovgs:renderers:4.1.0'
-    implementation 'org.maplibre.gl:android-sdk:10.2.0'
+    implementation 'org.maplibre.gl:android-sdk:11.0.0-pre4'
     implementation 'org.maplibre.gl:android-plugin-scalebar-v9:2.0.2'
 
     implementation 'com.jakewharton.timber:timber:5.0.1'
