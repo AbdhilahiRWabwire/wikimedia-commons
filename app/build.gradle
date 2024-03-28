@@ -29,7 +29,6 @@ final com_google_dagger = "2.51"
 final adapter_delegates_4 = "4.3.2"
 final com_jakewharton_butterknife = "10.2.3"
 final com_squareup_okhttp3 = "4.12.0"
-final org_jetbrains_compose = "1.6.1"
 final org_jetbrains_kotlin = "1.9.22"
 final org_jetbrains_kotlinx_coroutines = "1.8.0"
 final org_jetbrains_kotlinx_io = "0.3.1"
@@ -58,15 +57,6 @@ dependencies {
     debugImplementation 'com.google.android.material:compose-theme-adapter:1.2.1'
     debugImplementation 'com.google.android.material:compose-theme-adapter-3:1.1.1'
     debugImplementation 'com.google.android.material:compose-theme-adapter-core:1.0.1'
-    // Compose Multiplatform
-    debugImplementation "org.jetbrains.compose.animation:animation:$org_jetbrains_compose"
-    debugImplementation "org.jetbrains.compose.desktop:desktop:$org_jetbrains_compose"
-    debugImplementation "org.jetbrains.compose.foundation:foundation:$org_jetbrains_compose"
-    debugImplementation "org.jetbrains.compose.html:html-core:$org_jetbrains_compose"
-    debugImplementation "org.jetbrains.compose.material:material:$org_jetbrains_compose"
-    debugImplementation "org.jetbrains.compose.material3:material3:$org_jetbrains_compose"
-    debugImplementation "org.jetbrains.compose.runtime:runtime:$org_jetbrains_compose"
-    debugImplementation "org.jetbrains.compose.ui:ui:$org_jetbrains_compose"
     // Compose Tests
     testImplementation "androidx.compose.ui:ui-test:$androidx_compose"
     testImplementation "com.google.accompanist:accompanist-testharness:$com_google_accompanist"
@@ -261,7 +251,7 @@ android {
         enabled = true
     }
 
-    compileSdkVersion 34
+    compileSdkVersion 33
 
     defaultConfig {
         //applicationId 'fr.free.nrw.commons'
@@ -271,7 +261,7 @@ android {
         setProperty("archivesBaseName", "app-commons-v$versionName-" + getBranchName())
 
         minSdkVersion 21
-        targetSdkVersion 34
+        targetSdkVersion 33
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         testInstrumentationRunnerArguments clearPackageData: 'true'
 
