@@ -159,7 +159,7 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.2'
     testImplementation 'com.facebook.soloader:soloader:0.11.0'
     debugImplementation("androidx.fragment:fragment-testing:1.6.2")
-    testImplementation 'commons-io:commons-io:2.15.1'
+    testImplementation 'commons-io:commons-io:2.16.0'
 
     // Android testing
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
