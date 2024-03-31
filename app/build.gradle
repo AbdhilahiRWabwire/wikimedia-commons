@@ -129,6 +129,7 @@ dependencies {
     implementation 'com.dinuscxj:circleprogressbar:1.1.1'
     implementation 'com.karumi:dexter:5.0.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    
     implementation "com.hannesdorfmann:adapterdelegates4-kotlin-dsl-viewbinding:$ADAPTER_DELEGATES_VERSION"
     implementation "com.hannesdorfmann:adapterdelegates4-pagination:$ADAPTER_DELEGATES_VERSION"
     implementation "androidx.paging:paging-runtime-ktx:$PAGING_VERSION"
