@@ -120,16 +120,18 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp-ws:$com_squareup_okhttp3"
 
     // Merge Conflicts
+    implementation 'fr.avianey.com.viewpagerindicator:library:2.4.1.1@aar'
     implementation 'com.github.chrisbanes:PhotoView:2.0.0'
     implementation 'com.github.pedrovgs:renderers:3.3.3'
     implementation "org.maplibre.gl:android-sdk:$MAPLIBRE_VERSION"
     implementation 'org.maplibre.gl:android-plugin-scalebar-v9:1.0.0'
+
     implementation 'com.jakewharton.timber:timber:4.7.1'
     implementation 'com.github.deano2390:MaterialShowcaseView:1.2.0'
     implementation 'com.dinuscxj:circleprogressbar:1.1.1'
     implementation 'com.karumi:dexter:5.0.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
-    
+
     implementation "com.hannesdorfmann:adapterdelegates4-kotlin-dsl-viewbinding:$ADAPTER_DELEGATES_VERSION"
     implementation "com.hannesdorfmann:adapterdelegates4-pagination:$ADAPTER_DELEGATES_VERSION"
     implementation "androidx.paging:paging-runtime-ktx:$PAGING_VERSION"
@@ -137,7 +139,8 @@ dependencies {
     implementation "androidx.paging:paging-rxjava2-ktx:$PAGING_VERSION"
     implementation "androidx.recyclerview:recyclerview:1.2.0-alpha02"
     implementation "com.squareup.okhttp3:okhttp-ws:$OKHTTP_VERSION"
-
+    // End of Merge Conflicts
+    
     // Logging
     implementation 'ch.acra:acra-dialog:5.11.3'
     implementation 'ch.acra:acra-mail:5.11.3'
