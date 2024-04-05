@@ -31,6 +31,7 @@ final com_squareup_okhttp3 = "4.12.0"
 final org_jetbrains_kotlin = "1.9.23"
 final org_jetbrains_kotlinx_coroutines = "1.8.0"
 final org_jetbrains_kotlinx_io = "0.3.1"
+final org_jetbrains_kotlinx_serialization = "1.6.3"
 
 dependencies {
     // Jetpack Compose
@@ -68,9 +69,9 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-datetime:0.5.0'
     implementation "org.jetbrains.kotlinx:kotlinx-io-bytestring:$org_jetbrains_kotlinx_io"
     implementation "org.jetbrains.kotlinx:kotlinx-io-core:$org_jetbrains_kotlinx_io"
-    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-core:1.6.3'
-    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3'
-    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-properties:1.6.3'
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-core:$org_jetbrains_kotlinx_serialization"
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:$org_jetbrains_kotlinx_serialization"
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-properties:$org_jetbrains_kotlinx_serialization"
     implementation 'org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.9.0'
     // Kotlin Tests
     testImplementation "org.jetbrains.kotlin:kotlin-test:$org_jetbrains_kotlin"
