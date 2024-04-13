@@ -25,12 +25,12 @@ final androidx_room = "2.6.1"
 final androidx_lifecycle = "2.7.0"
 final androidx_work = "2.9.0"
 final com_google_accompanist = "0.35.0-alpha"
-final com_google_dagger = "2.51"
+final com_google_dagger = "2.51.1"
 final adapter_delegates_4 = "4.3.2"
 final com_squareup_okhttp3 = "4.12.0"
 final org_jetbrains_kotlin = "1.9.23"
 final org_jetbrains_kotlinx_coroutines = "1.8.0"
-final org_jetbrains_kotlinx_io = "0.3.1"
+final org_jetbrains_kotlinx_io = "0.3.2"
 final org_jetbrains_kotlinx_serialization = "1.6.3"
 
 dependencies {
@@ -76,27 +76,27 @@ dependencies {
     // Kotlin Tests
     testImplementation "org.jetbrains.kotlin:kotlin-test:$org_jetbrains_kotlin"
     testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$org_jetbrains_kotlinx_coroutines"
-    testImplementation 'org.jetbrains.kotlinx:lincheck:2.28.1'
+    testImplementation 'org.jetbrains.kotlinx:lincheck:2.29'
 
     // Utils
     implementation 'in.yuvi:http.fluent:1.3'
     implementation 'com.google.code.gson:gson:2.10.1'
-    implementation("com.squareup.okhttp3:okhttp:$com_squareup_okhttp3!!") {
+    implementation("com.squareup.okhttp3:okhttp:$com_squareup_okhttp3") {
         // Forcing dependency versions using force = true on a first-level dependency has been deprecated.
         //  Ref: https://docs.gradle.org/7.5/userguide/upgrading_version_5.html#forced_dependencies
         //force = true //API 19 support
     }
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
-    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.8.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.11.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.11.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.11.0'
     implementation 'com.squareup.okio:okio:3.9.0'
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
     implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
-    implementation 'com.jakewharton.rxbinding2:rxbinding:2.1.1'
-    implementation 'com.jakewharton.rxbinding3:rxbinding-appcompat:3.0.0'
-    implementation 'com.jakewharton.rxbinding2:rxbinding-support-v4:2.1.1'
-    implementation 'com.jakewharton.rxbinding2:rxbinding-appcompat-v7:2.1.1'
-    implementation 'com.jakewharton.rxbinding2:rxbinding-design:2.1.1'
+    implementation 'com.jakewharton.rxbinding2:rxbinding:2.2.0'
+    implementation 'com.jakewharton.rxbinding3:rxbinding-appcompat:3.1.0'
+    implementation 'com.jakewharton.rxbinding2:rxbinding-support-v4:2.2.0'
+    implementation 'com.jakewharton.rxbinding2:rxbinding-appcompat-v7:2.2.0'
+    implementation 'com.jakewharton.rxbinding2:rxbinding-design:2.2.0'
     implementation 'com.facebook.fresco:fresco:3.1.3'
     implementation 'org.apache.commons:commons-lang3:3.14.0'
 
@@ -124,7 +124,7 @@ dependencies {
     implementation 'fr.avianey.com.viewpagerindicator:library:2.4.1.1@aar'
     implementation 'com.github.chrisbanes:PhotoView:2.3.0'
     implementation 'com.github.pedrovgs:renderers:4.1.0'
-    implementation "org.maplibre.gl:android-sdk:$MAPLIBRE_VERSION"
+    implementation "org.maplibre.gl:android-sdk:10.3.0"
     implementation 'org.maplibre.gl:android-plugin-scalebar-v9:2.0.2'
 
     implementation 'com.jakewharton.timber:timber:5.0.1'
@@ -133,11 +133,11 @@ dependencies {
     implementation 'com.karumi:dexter:6.2.3'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
 
-    implementation "com.hannesdorfmann:adapterdelegates4-kotlin-dsl-viewbinding:$ADAPTER_DELEGATES_VERSION"
-    implementation "com.hannesdorfmann:adapterdelegates4-pagination:$ADAPTER_DELEGATES_VERSION"
-    implementation "androidx.paging:paging-runtime-ktx:$PAGING_VERSION"
-    testImplementation "androidx.paging:paging-common-ktx:$PAGING_VERSION"
-    implementation "androidx.paging:paging-rxjava2-ktx:$PAGING_VERSION"
+    implementation "com.hannesdorfmann:adapterdelegates4-kotlin-dsl-viewbinding:4.3.2"
+    implementation "com.hannesdorfmann:adapterdelegates4-pagination:4.3.2"
+    implementation "androidx.paging:paging-runtime-ktx:3.2.1"
+    testImplementation "androidx.paging:paging-common-ktx:3.2.1"
+    implementation "androidx.paging:paging-rxjava2-ktx:3.2.1"
     implementation "androidx.recyclerview:recyclerview:1.3.2"
     implementation "com.squareup.okhttp3:okhttp-ws:$OKHTTP_VERSION"
     // End of Merge Conflicts
@@ -145,7 +145,7 @@ dependencies {
     // Logging
     implementation 'ch.acra:acra-dialog:5.11.3'
     implementation 'ch.acra:acra-mail:5.11.3'
-    implementation 'org.slf4j:slf4j-api:2.0.12'
+    implementation 'org.slf4j:slf4j-api:2.0.13'
     api('com.github.tony19:logback-android-classic:1.1.1-6') {
         exclude group: 'com.google.android', module: 'android'
     }
@@ -166,7 +166,7 @@ dependencies {
 
     // Unit testing
     testImplementation 'junit:junit:4.13.2'
-    testImplementation 'org.robolectric:robolectric:4.11.1'
+    testImplementation 'org.robolectric:robolectric:4.12.1'
     testImplementation 'androidx.test:core:1.5.0'
     testImplementation 'androidx.test:runner:1.5.2'
     testImplementation 'androidx.test.ext:junit:1.1.5'
@@ -178,7 +178,7 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.2'
     testImplementation 'com.facebook.soloader:soloader:0.11.0'
     debugImplementation("androidx.fragment:fragment-testing:1.6.2")
-    testImplementation 'commons-io:commons-io:2.15.1'
+    testImplementation 'commons-io:commons-io:2.16.1'
 
     // Android testing
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
@@ -233,7 +233,7 @@ dependencies {
     //Glide
     implementation 'com.github.bumptech.glide:glide:4.16.0'
     ksp 'com.github.bumptech.glide:compiler:4.16.0'
-    ksp 'androidx.databinding:databinding-compiler:8.3.1'
+    ksp 'androidx.databinding:databinding-compiler:8.3.2'
 
     implementation("io.github.coordinates2country:coordinates2country-android:1.6") { exclude group: 'com.google.android', module: 'android' }
 
