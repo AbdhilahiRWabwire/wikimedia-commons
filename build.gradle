@@ -18,7 +18,7 @@ plugins {
     id 'com.android.application' version "8.3.2" apply false
     id 'com.android.library' version "8.3.2" apply false
     id 'com.getkeepsafe.dexcount' version "4.0.0" apply false
-    id 'com.google.devtools.ksp' version "1.9.23-1.0.19" apply false
+    id 'com.google.devtools.ksp' version "1.9.23-1.0.20" apply false
     id 'com.github.triplet.play' version "3.9.1" apply false
     id 'org.codehaus.groovy.android' version "3.0.0" apply false
     id 'org.gradle.android.cache-fix' version "3.0.1" apply false
