@@ -194,7 +194,7 @@ dependencies {
     androidTestUtil 'androidx.test:orchestrator:1.4.2'
 
     // Debugging
-    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.13'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.14'
 
     // Support libraries
     implementation 'com.google.android.material:material:1.11.0'
