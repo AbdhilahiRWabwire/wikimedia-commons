@@ -433,7 +433,7 @@ android {
         abortOnError false
         disable 'MissingTranslation', 'ExtraTranslation'
     }
-    ndkVersion '26.2.11394342'
+    ndkVersion '27.0.11718014'
 }
 
 String getTestUserName() {
