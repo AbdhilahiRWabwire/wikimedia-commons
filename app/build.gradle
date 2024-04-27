@@ -35,7 +35,7 @@ final org_jetbrains_kotlinx_serialization = "1.6.3"
 
 dependencies {
     // Jetpack Compose
-    debugImplementation 'androidx.activity:activity-compose:1.8.2'
+    debugImplementation 'androidx.activity:activity-compose:1.9.0'
     debugImplementation "androidx.compose.animation:animation:$androidx_compose"
     debugImplementation 'androidx.compose.compiler:compiler:1.5.11'
     debugImplementation "androidx.compose.foundation:foundation:$androidx_compose"
