@@ -30,14 +30,14 @@ final adapter_delegates_4 = "4.3.2"
 final com_squareup_okhttp3 = "4.12.0"
 final org_jetbrains_kotlin = "1.9.23"
 final org_jetbrains_kotlinx_coroutines = "1.8.0"
-final org_jetbrains_kotlinx_io = "0.3.2"
+final org_jetbrains_kotlinx_io = "0.3.3"
 final org_jetbrains_kotlinx_serialization = "1.6.3"
 
 dependencies {
     // Jetpack Compose
-    debugImplementation 'androidx.activity:activity-compose:1.8.2'
+    debugImplementation 'androidx.activity:activity-compose:1.9.0'
     debugImplementation "androidx.compose.animation:animation:$androidx_compose"
-    debugImplementation 'androidx.compose.compiler:compiler:1.5.11'
+    debugImplementation 'androidx.compose.compiler:compiler:1.5.12'
     debugImplementation "androidx.compose.foundation:foundation:$androidx_compose"
     debugImplementation "androidx.compose.material:material:$androidx_compose"
     debugImplementation 'androidx.compose.material3:material3:1.2.1'
@@ -45,7 +45,7 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui:$androidx_compose"
     debugImplementation "androidx.compose.ui:ui-tooling-preview:$androidx_compose"
     debugImplementation 'androidx.constraintlayout:constraintlayout-compose:1.0.1'
-    debugImplementation 'androidx.core:core-ktx:1.12.0'
+    debugImplementation 'androidx.core:core-ktx:1.13.0'
     debugImplementation "androidx.lifecycle:lifecycle-runtime-compose:$androidx_lifecycle"
     debugImplementation "androidx.lifecycle:lifecycle-viewmodel-compose:$androidx_lifecycle"
     debugImplementation 'androidx.navigation:navigation-compose:2.7.7'
@@ -243,7 +243,7 @@ project.gradle.taskGraph.whenReady {
 
 android {
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.11"
+        kotlinCompilerExtensionVersion = "1.5.12"
     }
 
     dataBinding {
