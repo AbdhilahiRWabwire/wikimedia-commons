@@ -18,18 +18,17 @@ if (isRunningOnTravisAndIsNotPRBuild) {
     apply plugin: 'com.github.triplet.play'
 }
 
-final androidx_compose = "1.6.6"
+final androidx_compose = "1.6.7"
 final androidx_paging = "3.2.1"
 final androidx_preference = "1.2.1"
 final androidx_room = "2.6.1"
 final androidx_lifecycle = "2.7.0"
 final androidx_work = "2.9.0"
-final com_google_accompanist = "0.35.0-alpha"
 final com_google_dagger = "2.51.1"
 final adapter_delegates_4 = "4.3.2"
 final com_squareup_okhttp3 = "4.12.0"
 final org_jetbrains_kotlin = "1.9.23"
-final org_jetbrains_kotlinx_coroutines = "1.8.0"
+final org_jetbrains_kotlinx_coroutines = "1.8.1-Beta"
 final org_jetbrains_kotlinx_io = "0.3.3"
 final org_jetbrains_kotlinx_serialization = "1.6.3"
 
@@ -37,7 +36,7 @@ dependencies {
     // Jetpack Compose
     debugImplementation 'androidx.activity:activity-compose:1.9.0'
     debugImplementation "androidx.compose.animation:animation:$androidx_compose"
-    debugImplementation 'androidx.compose.compiler:compiler:1.5.12'
+    debugImplementation 'androidx.compose.compiler:compiler:1.5.13'
     debugImplementation "androidx.compose.foundation:foundation:$androidx_compose"
     debugImplementation "androidx.compose.material:material:$androidx_compose"
     debugImplementation 'androidx.compose.material3:material3:1.2.1'
@@ -45,21 +44,16 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui:$androidx_compose"
     debugImplementation "androidx.compose.ui:ui-tooling-preview:$androidx_compose"
     debugImplementation 'androidx.constraintlayout:constraintlayout-compose:1.0.1'
-    debugImplementation 'androidx.core:core-ktx:1.13.0'
+    debugImplementation 'androidx.core:core-ktx:1.13.1'
     debugImplementation "androidx.lifecycle:lifecycle-runtime-compose:$androidx_lifecycle"
     debugImplementation "androidx.lifecycle:lifecycle-viewmodel-compose:$androidx_lifecycle"
     debugImplementation 'androidx.navigation:navigation-compose:2.7.7'
     debugImplementation 'androidx.paging:paging-compose:3.2.1'
-    debugImplementation "com.google.accompanist:accompanist-adaptive:$com_google_accompanist"
-    debugImplementation "com.google.accompanist:accompanist-drawablepainter:$com_google_accompanist"
-    debugImplementation "com.google.accompanist:accompanist-navigation-material:$com_google_accompanist"
-    debugImplementation "com.google.accompanist:accompanist-permissions:$com_google_accompanist"
     debugImplementation 'com.google.android.material:compose-theme-adapter:1.2.1'
     debugImplementation 'com.google.android.material:compose-theme-adapter-3:1.1.1'
     debugImplementation 'com.google.android.material:compose-theme-adapter-core:1.0.1'
     // Compose Tests
     testImplementation "androidx.compose.ui:ui-test:$androidx_compose"
-    testImplementation "com.google.accompanist:accompanist-testharness:$com_google_accompanist"
     // Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$org_jetbrains_kotlin"
     implementation "org.jetbrains.kotlin:kotlin-reflect:$org_jetbrains_kotlin"
@@ -243,7 +237,7 @@ project.gradle.taskGraph.whenReady {
 
 android {
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.12"
+        kotlinCompilerExtensionVersion = "1.5.13"
     }
 
     dataBinding {
