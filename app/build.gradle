@@ -28,9 +28,9 @@ final androidx_work = "2.9.0"
 final com_google_dagger = "2.51.1"
 final adapter_delegates_4 = "4.3.2"
 final com_squareup_okhttp3 = "4.12.0"
-final org_jetbrains_kotlin = "1.9.23"
+final org_jetbrains_kotlin = "1.9.24"
 final org_jetbrains_kotlinx_coroutines = "1.8.1-Beta"
-final org_jetbrains_kotlinx_io = "0.3.3"
+final org_jetbrains_kotlinx_io = "0.3.4"
 final org_jetbrains_kotlinx_serialization = "1.6.3"
 
 dependencies {
@@ -71,7 +71,7 @@ dependencies {
     // Kotlin Tests
     testImplementation "org.jetbrains.kotlin:kotlin-test:$org_jetbrains_kotlin"
     testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$org_jetbrains_kotlinx_coroutines"
-    testImplementation 'org.jetbrains.kotlinx:lincheck:2.30'
+    testImplementation 'org.jetbrains.kotlinx:lincheck:2.32'
 
     // Utils
     implementation 'in.yuvi:http.fluent:1.3'
