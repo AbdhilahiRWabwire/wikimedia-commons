@@ -4,7 +4,6 @@ plugins {
     id 'com.google.devtools.ksp'
     id 'com.github.triplet.play'
     id 'org.gradle.android.cache-fix'
-    id 'org.jetbrains.compose'
     id 'org.jetbrains.kotlin.android'
     id 'org.jetbrains.kotlin.kapt'
     id 'org.jetbrains.kotlin.plugin.parcelize'
