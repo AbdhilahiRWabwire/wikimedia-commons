@@ -161,7 +161,7 @@ dependencies {
     androidTestImplementation 'androidx.test:rules:1.5.0'
     androidTestImplementation 'androidx.test:core:1.5.0'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.annotation:annotation:1.7.1'
+    androidTestImplementation 'androidx.annotation:annotation:1.8.0'
     androidTestImplementation 'com.squareup.okhttp3:mockwebserver:4.12.0'
     androidTestImplementation 'androidx.test.uiautomator:uiautomator:2.3.0'
     androidTestUtil 'androidx.test:orchestrator:1.4.2'
@@ -328,7 +328,7 @@ android {
     }
 
     configurations.all {
-        resolutionStrategy.force 'androidx.annotation:annotation:1.7.1'
+        resolutionStrategy.force 'androidx.annotation:annotation:1.8.0'
         resolutionStrategy.force 'com.jakewharton.timber:timber:5.0.1'
         resolutionStrategy.force "androidx.fragment:fragment:$androidx_fragment"
         exclude module: 'okhttp-ws'
