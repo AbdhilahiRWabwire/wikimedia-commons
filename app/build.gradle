@@ -20,7 +20,7 @@ if (isRunningOnTravisAndIsNotPRBuild) {
 final androidx_annotation = "1.8.0"
 final androidx_compose = "1.6.7"
 final androidx_fragment = "1.7.0"
-final androidx_paging = "3.2.1"
+final androidx_paging = "3.3.0"
 final androidx_preference = "1.2.1"
 final androidx_room = "2.6.1"
 final androidx_lifecycle = "2.8.0"
