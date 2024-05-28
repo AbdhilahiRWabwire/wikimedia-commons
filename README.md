@@ -1,16 +1,12 @@
 # Wikimedia Commons Android app
-
 ![GitHub issue custom search](https://img.shields.io/github/issues-search?label=%22good%20first%20issue%22%20issues&query=repo%3Acommons-app%2Fapps-android-commons%20is%3Aissue%20is%3Aopen%20label%3A%22good%20first%20issue%22)
 [![Build status](https://github.com/commons-app/apps-android-commons/actions/workflows/android.yml/badge.svg?branch=master)](https://github.com/commons-app/apps-android-commons/actions?query=branch%3Amaster)
 [![Preview the app](https://img.shields.io/badge/Preview-Appetize.io-orange.svg)](https://appetize.io/app/8ywtpe9f8tb8h6bey11c92vkcw)
 [![codecov](https://codecov.io/gh/commons-app/apps-android-commons/branch/master/graph/badge.svg)](https://codecov.io/gh/commons-app/apps-android-commons)
 
-The Wikimedia Commons Android app allows users to upload pictures from their Android phone/tablet to
-Wikimedia Commons. Download the app [here][1], or view our [website][2].
+The Wikimedia Commons Android app allows users to upload pictures from their Android phone/tablet to Wikimedia Commons. Download the app [here][1], or view our [website][2].
 
-Initially started by the Wikimedia Foundation, this app is now maintained by grantees and volunteers
-of the Wikimedia community. Anyone is welcome to improve it, just choose among the [open issues][3]
-and send us a pull request! :-)
+Initially started by the Wikimedia Foundation, this app is now maintained by grantees and volunteers of the Wikimedia community. Anyone is welcome to improve it, just choose among the [open issues][3] and send us a pull request! :-) 
 
 <a href="https://f-droid.org/repository/browse/?fdid=fr.free.nrw.commons" target="_blank">
 <img src="https://upload.wikimedia.org/wikipedia/commons/archive/9/96/20200131184248%21%22Get_it_on_F-droid%22_Badge.png" alt="Get it on F-Droid" height="90"/></a>
@@ -19,14 +15,13 @@ and send us a pull request! :-)
 
 ## Documentation
 
-Our [documentation repository][4] contains extensive documentation for users, contributors, and
-developers alike:
+Our [documentation repository][4] contains extensive documentation for users, contributors, and developers alike:
 
 * [User Documentation][5]
 * [Contributor Documentation][6]
-    * [Volunteers Welcome!][7]
+  * [Volunteers Welcome!][7]
 * [Developer Documentation][8]
-    * [Libraries Used][9]
+  * [Libraries Used][9]
 
 ## Contributors ##
 
@@ -40,6 +35,7 @@ Thank you all for your work!
 | [<img src="https://avatars.githubusercontent.com/u/126143257?v=4" width="100px;"/><br /><sub><b>shashankiitbhu</b></sub>](https://github.com/shashankiitbhu) | [<img src="https://avatars.githubusercontent.com/u/54663429?v=4" width="100px;"/><br /><sub><b>Pratham2305</b></sub>](https://github.com/Pratham2305) | [<img src="https://avatars.githubusercontent.com/u/1345681?v=4" width="100px;"/><br /><sub><b>sandarumk</b></sub>](https://github.com/sandarumk) | [<img src="https://avatars.githubusercontent.com/u/29161745?v=4" width="100px;"/><br /><sub><b>tanvidadu</b></sub>](https://github.com/tanvidadu) | [<img src="https://avatars.githubusercontent.com/u/39745544?v=4" width="100px;"/><br /><sub><b>cypherop</b></sub>](https://github.com/cypherop) |
 | [<img src="https://avatars.githubusercontent.com/u/65972015?v=4" width="100px;"/><br /><sub><b>Prince-kushwaha</b></sub>](https://github.com/Prince-kushwaha) | [<img src="https://avatars.githubusercontent.com/u/6953323?v=4" width="100px;"/><br /><sub><b>tobias47n9e</b></sub>](https://github.com/tobias47n9e) | [<img src="https://avatars.githubusercontent.com/u/54016427?v=4" width="100px;"/><br /><sub><b>4D17Y4</b></sub>](https://github.com/4D17Y4) | [<img src="https://avatars.githubusercontent.com/u/25305892?v=4" width="100px;"/><br /><sub><b>hismaeel</b></sub>](https://github.com/hismaeel) | [<img src="https://avatars.githubusercontent.com/u/12574756?v=4" width="100px;"/><br /><sub><b>tshradheya</b></sub>](https://github.com/tshradheya) |
 
+
 .. and [many more](https://github.com/commons-app/apps-android-commons/graphs/contributors).
 
 ## License ##
@@ -48,21 +44,14 @@ This software is open source, licensed under the [Apache License 2.0][10].
 
 
 [1]: https://play.google.com/store/apps/details?id=fr.free.nrw.commons
-
 [2]: https://commons-app.github.io/
-
 [3]: https://github.com/commons-app/apps-android-commons/issues
 
 [4]: https://github.com/commons-app/commons-app-documentation/blob/master/android/README.md#-android-documentation
-
 [5]: https://github.com/commons-app/commons-app-documentation/blob/master/android/README.md#-user-documentation
-
 [6]: https://github.com/commons-app/commons-app-documentation/blob/master/android/README.md#️-contributor-documentation
-
 [7]: https://github.com/commons-app/commons-app-documentation/blob/master/android/Volunteers-welcome!.md#volunteers-welcome
-
 [8]: https://github.com/commons-app/commons-app-documentation/blob/master/android/README.md#-developer-documentation
-
 [9]: https://github.com/commons-app/commons-app-documentation/blob/master/android/Libraries-used.md#libraries-used
 
 [10]: https://www.apache.org/licenses/LICENSE-2.0

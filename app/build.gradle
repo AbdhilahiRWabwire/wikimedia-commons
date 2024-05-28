@@ -35,25 +35,25 @@ final org_jetbrains_kotlinx_serialization = "1.6.3"
 
 dependencies {
     // Jetpack Compose
-    debugImplementation 'com.android.tools.compose:compose-preview-detector:31.6.0-alpha03'
-    debugImplementation 'androidx.activity:activity-compose:1.9.0'
-    debugImplementation "androidx.compose.animation:animation:$androidx_compose"
-    debugImplementation 'androidx.compose.compiler:compiler:1.5.14'
-    debugImplementation "androidx.compose.foundation:foundation:$androidx_compose"
-    debugImplementation "androidx.compose.material:material:$androidx_compose"
-    debugImplementation 'androidx.compose.material3:material3:1.2.1'
-    debugImplementation "androidx.compose.runtime:runtime:$androidx_compose"
-    debugImplementation "androidx.compose.ui:ui:$androidx_compose"
-    debugImplementation "androidx.compose.ui:ui-tooling:$androidx_compose"
-    debugImplementation 'androidx.constraintlayout:constraintlayout-compose:1.0.1'
-    debugImplementation 'androidx.core:core-ktx:1.13.1'
-    debugImplementation "androidx.lifecycle:lifecycle-runtime-compose:$androidx_lifecycle"
-    debugImplementation "androidx.lifecycle:lifecycle-viewmodel-compose:$androidx_lifecycle"
-    debugImplementation 'androidx.navigation:navigation-compose:2.7.7'
-    debugImplementation 'androidx.paging:paging-compose:3.3.0'
-    debugImplementation 'com.google.android.material:compose-theme-adapter:1.2.1'
-    debugImplementation 'com.google.android.material:compose-theme-adapter-3:1.1.1'
-    debugImplementation 'com.google.android.material:compose-theme-adapter-core:1.0.1'
+    implementation 'com.android.tools.compose:compose-preview-detector:31.6.0-alpha03'
+    implementation 'androidx.activity:activity-compose:1.9.0'
+    implementation "androidx.compose.animation:animation:$androidx_compose"
+    implementation 'androidx.compose.compiler:compiler:1.5.14'
+    implementation "androidx.compose.foundation:foundation:$androidx_compose"
+    implementation "androidx.compose.material:material:$androidx_compose"
+    implementation 'androidx.compose.material3:material3:1.2.1'
+    implementation "androidx.compose.runtime:runtime:$androidx_compose"
+    implementation "androidx.compose.ui:ui:$androidx_compose"
+    implementation "androidx.compose.ui:ui-tooling:$androidx_compose"
+    implementation 'androidx.constraintlayout:constraintlayout-compose:1.0.1'
+    implementation 'androidx.core:core-ktx:1.13.1'
+    implementation "androidx.lifecycle:lifecycle-runtime-compose:$androidx_lifecycle"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$androidx_lifecycle"
+    implementation 'androidx.navigation:navigation-compose:2.7.7'
+    implementation 'androidx.paging:paging-compose:3.3.0'
+    implementation 'com.google.android.material:compose-theme-adapter:1.2.1'
+    implementation 'com.google.android.material:compose-theme-adapter-3:1.1.1'
+    implementation 'com.google.android.material:compose-theme-adapter-core:1.0.1'
     // Compose Tests
     testImplementation "androidx.compose.ui:ui-test:$androidx_compose"
     // Kotlin
