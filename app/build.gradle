@@ -29,7 +29,7 @@ final adapter_delegates_4 = "4.3.2"
 final com_squareup_okhttp3 = "4.12.0"
 final org_jetbrains_kotlin = "1.9.24"
 final org_jetbrains_kotlinx_coroutines = "1.8.1"
-final org_jetbrains_kotlinx_io = "0.3.5"
+final org_jetbrains_kotlinx_io = "0.4.0"
 final org_jetbrains_kotlinx_serialization = "1.6.3"
 
 dependencies {
