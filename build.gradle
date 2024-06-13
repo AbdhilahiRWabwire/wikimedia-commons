@@ -6,7 +6,7 @@ buildscript {
         maven { url "https://plugins.gradle.org/m2/" }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.4.0'
+        classpath 'com.android.tools.build:gradle:8.4.2'
         classpath 'com.getkeepsafe.dexcount:dexcount-gradle-plugin:4.0.0'
         classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.24'
         classpath 'org.codehaus.groovy:groovy-all:3.0.21'
@@ -14,8 +14,8 @@ buildscript {
 }
 
 plugins {
-    id 'com.android.application' version "8.4.1" apply false
-    id 'com.android.library' version "8.4.1" apply false
+    id 'com.android.application' version "8.4.2" apply false
+    id 'com.android.library' version "8.4.2" apply false
     id 'com.getkeepsafe.dexcount' version "4.0.0" apply false
     id 'com.google.devtools.ksp' version "1.9.24-1.0.20" apply false
     id 'com.github.triplet.play' version "3.9.1" apply false
