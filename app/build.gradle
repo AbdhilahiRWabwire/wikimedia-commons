@@ -6,6 +6,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'org.jetbrains.kotlin.kapt'
     id 'org.jetbrains.kotlin.plugin.parcelize'
+    id 'org.jetbrains.kotlin.plugin.compose'
 }
 apply from: '../gitutils.gradle'
 apply from: "$rootDir/jacoco.gradle"
@@ -28,7 +29,7 @@ final androidx_work = "2.9.0"
 final com_google_dagger = "2.51.1"
 final adapter_delegates_4 = "4.3.2"
 final com_squareup_okhttp3 = "4.12.0"
-final org_jetbrains_kotlin = "1.9.24"
+final org_jetbrains_kotlin = "2.0.0"
 final org_jetbrains_kotlinx_coroutines = "1.9.0-RC"
 final org_jetbrains_kotlinx_io = "0.4.0"
 final org_jetbrains_kotlinx_serialization = "1.7.0"
