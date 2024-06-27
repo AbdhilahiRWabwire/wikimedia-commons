@@ -17,71 +17,71 @@ if (isRunningOnTravisAndIsNotPRBuild) {
     apply plugin: 'com.github.triplet.play'
 }
 
-final androidx_annotation = "1.8.0"
-final androidx_compose = "1.6.8"
-final androidx_databinding = "8.5.0"
-final androidx_fragment = "1.8.0"
-final androidx_lifecycle = "2.8.2"
-final androidx_paging = "3.3.0"
-final androidx_preference = "1.2.1"
-final androidx_navigation = "2.7.7"
-final androidx_room = "2.6.1"
-final androidx_work = "2.9.0"
-final com_google_dagger = "2.51.1"
-final adapter_delegates_4 = "4.3.2"
-final com_squareup_okhttp3 = "4.12.0"
-final org_jetbrains_kotlin = "2.0.0"
-final org_jetbrains_kotlinx_coroutines = "1.9.0-RC"
-final org_jetbrains_kotlinx_io = "0.4.0"
-final org_jetbrains_kotlinx_serialization = "1.7.0"
+final androidxAnnotation = "1.8.0"
+final androidxCompose = "1.6.8"
+final androidxDatabinding = "8.5.0"
+final androidxFragment = "1.8.0"
+final androidxLifecycle = "2.8.2"
+final androidxPaging = "3.3.0"
+final androidxPreference = "1.2.1"
+final androidxNavigation = "2.7.7"
+final androidxRoom = "2.6.1"
+final androidxWork = "2.9.0"
+final comGoogleDagger = "2.51.1"
+final adapterDelegates4 = "4.3.2"
+final comSquareupOkHTTP3 = "4.12.0"
+final orgJetBrainsKotlin = "2.0.0"
+final orgJetBrainsKotlinxCoroutines = "1.9.0-RC"
+final orgJetBrainsKotlinxIO = "0.4.0"
+final orgJetBrainsKotlinxSerialization = "1.7.0"
 
 dependencies {
     // Jetpack Compose
     implementation 'com.android.tools.compose:compose-preview-detector:31.6.0-alpha07'
     implementation 'androidx.activity:activity-compose:1.9.0'
-    implementation "androidx.compose.animation:animation:$androidx_compose"
+    implementation "androidx.compose.animation:animation:$androidxCompose"
     implementation 'androidx.compose.compiler:compiler:1.5.14'
-    implementation "androidx.compose.foundation:foundation:$androidx_compose"
-    implementation "androidx.compose.material:material:$androidx_compose"
+    implementation "androidx.compose.foundation:foundation:$androidxCompose"
+    implementation "androidx.compose.material:material:$androidxCompose"
     implementation 'androidx.compose.material3:material3:1.2.1'
-    implementation "androidx.compose.runtime:runtime:$androidx_compose"
-    implementation "androidx.compose.ui:ui:$androidx_compose"
-    implementation "androidx.compose.ui:ui-tooling:$androidx_compose"
+    implementation "androidx.compose.runtime:runtime:$androidxCompose"
+    implementation "androidx.compose.ui:ui:$androidxCompose"
+    implementation "androidx.compose.ui:ui-tooling:$androidxCompose"
     implementation 'androidx.constraintlayout:constraintlayout-compose:1.0.1'
     implementation 'androidx.core:core-ktx:1.13.1'
-    implementation "androidx.lifecycle:lifecycle-runtime-compose:$androidx_lifecycle"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$androidx_lifecycle"
-    implementation "androidx.navigation:navigation-common-ktx:$androidx_navigation"
-    implementation "androidx.navigation:navigation-compose:$androidx_navigation"
-    implementation "androidx.navigation:navigation-ui-ktx:$androidx_navigation"
+    implementation "androidx.lifecycle:lifecycle-runtime-compose:$androidxLifecycle"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$androidxLifecycle"
+    implementation "androidx.navigation:navigation-common-ktx:$androidxNavigation"
+    implementation "androidx.navigation:navigation-compose:$androidxNavigation"
+    implementation "androidx.navigation:navigation-ui-ktx:$androidxNavigation"
     implementation 'androidx.paging:paging-compose:3.3.0'
     implementation 'com.google.android.material:compose-theme-adapter:1.2.1'
     implementation 'com.google.android.material:compose-theme-adapter-3:1.1.1'
     implementation 'com.google.android.material:compose-theme-adapter-core:1.0.1'
     // Kotlin
-    implementation "org.jetbrains.kotlin:kotlin-reflect:$org_jetbrains_kotlin"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$org_jetbrains_kotlin"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$orgJetBrainsKotlin"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$orgJetBrainsKotlin"
     implementation 'org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.7'
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$org_jetbrains_kotlinx_coroutines"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$org_jetbrains_kotlinx_coroutines"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$orgJetBrainsKotlinxCoroutines"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$orgJetBrainsKotlinxCoroutines"
     implementation 'org.jetbrains.kotlinx:kotlinx-datetime:0.6.0'
-    implementation "org.jetbrains.kotlinx:kotlinx-io-bytestring:$org_jetbrains_kotlinx_io"
-    implementation "org.jetbrains.kotlinx:kotlinx-io-core:$org_jetbrains_kotlinx_io"
-    implementation "org.jetbrains.kotlinx:kotlinx-serialization-core:$org_jetbrains_kotlinx_serialization"
-    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:$org_jetbrains_kotlinx_serialization"
-    implementation "org.jetbrains.kotlinx:kotlinx-serialization-properties:$org_jetbrains_kotlinx_serialization"
+    implementation "org.jetbrains.kotlinx:kotlinx-io-bytestring:$orgJetBrainsKotlinxIO"
+    implementation "org.jetbrains.kotlinx:kotlinx-io-core:$orgJetBrainsKotlinxIO"
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-core:$orgJetBrainsKotlinxSerialization"
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:$orgJetBrainsKotlinxSerialization"
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-properties:$orgJetBrainsKotlinxSerialization"
     implementation 'org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.9.0'
     // Tests
-    androidTestImplementation "androidx.compose.ui:ui-test:$androidx_compose"
-    androidTestImplementation "androidx.navigation:navigation-testing:$androidx_navigation"
-    testImplementation "org.jetbrains.kotlin:kotlin-test:$org_jetbrains_kotlin"
-    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$org_jetbrains_kotlinx_coroutines"
+    androidTestImplementation "androidx.compose.ui:ui-test:$androidxCompose"
+    androidTestImplementation "androidx.navigation:navigation-testing:$androidxNavigation"
+    testImplementation "org.jetbrains.kotlin:kotlin-test:$orgJetBrainsKotlin"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$orgJetBrainsKotlinxCoroutines"
     testImplementation 'org.jetbrains.kotlinx:lincheck:2.32'
 
     // Utils
     implementation 'in.yuvi:http.fluent:1.3'
     implementation 'com.google.code.gson:gson:2.11.0'
-    implementation("com.squareup.okhttp3:okhttp:$com_squareup_okhttp3") {
+    implementation("com.squareup.okhttp3:okhttp:$comSquareupOkHTTP3") {
         // Forcing dependency versions using force = true on a first-level dependency has been deprecated.
         //  Ref: https://docs.gradle.org/7.5/userguide/upgrading_version_5.html#forced_dependencies
         //force = true //API 19 support
@@ -112,13 +112,13 @@ dependencies {
     implementation 'com.dinuscxj:circleprogressbar:1.3.6'
     implementation 'com.karumi:dexter:6.2.3'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
-    implementation "com.hannesdorfmann:adapterdelegates4-kotlin-dsl-viewbinding:$adapter_delegates_4"
-    implementation "com.hannesdorfmann:adapterdelegates4-pagination:$adapter_delegates_4"
-    implementation "androidx.paging:paging-runtime-ktx:$androidx_paging"
-    testImplementation "androidx.paging:paging-common-ktx:$androidx_paging"
-    implementation "androidx.paging:paging-rxjava2-ktx:$androidx_paging"
+    implementation "com.hannesdorfmann:adapterdelegates4-kotlin-dsl-viewbinding:$adapterDelegates4"
+    implementation "com.hannesdorfmann:adapterdelegates4-pagination:$adapterDelegates4"
+    implementation "androidx.paging:paging-runtime-ktx:$androidxPaging"
+    testImplementation "androidx.paging:paging-common-ktx:$androidxPaging"
+    implementation "androidx.paging:paging-rxjava2-ktx:$androidxPaging"
     implementation 'androidx.recyclerview:recyclerview:1.3.2'
-    implementation "com.squareup.okhttp3:okhttp-ws:$com_squareup_okhttp3"
+    implementation "com.squareup.okhttp3:okhttp-ws:$comSquareupOkHTTP3"
     
     // Logging
     implementation 'ch.acra:acra-dialog:5.11.3'
@@ -127,13 +127,13 @@ dependencies {
     api('com.github.tony19:logback-android-classic:1.1.1-6') {
         exclude group: 'com.google.android', module: 'android'
     }
-    implementation "com.squareup.okhttp3:logging-interceptor:$com_squareup_okhttp3"
+    implementation "com.squareup.okhttp3:logging-interceptor:$comSquareupOkHTTP3"
 
     // Dependency injector
-    implementation "com.google.dagger:dagger-android:$com_google_dagger"
-    implementation "com.google.dagger:dagger-android-support:$com_google_dagger"
-    ksp "com.google.dagger:dagger-android-processor:$com_google_dagger"
-    ksp "com.google.dagger:dagger-compiler:$com_google_dagger"
+    implementation "com.google.dagger:dagger-android:$comGoogleDagger"
+    implementation "com.google.dagger:dagger-android-support:$comGoogleDagger"
+    ksp "com.google.dagger:dagger-android-processor:$comGoogleDagger"
+    ksp "com.google.dagger:dagger-compiler:$comGoogleDagger"
 
     //Mocking
     testImplementation 'com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0'
@@ -149,13 +149,13 @@ dependencies {
     testImplementation 'androidx.test:runner:1.5.2'
     testImplementation 'androidx.test.ext:junit:1.1.5'
     testImplementation 'androidx.test:rules:1.5.0'
-    testImplementation "com.squareup.okhttp3:mockwebserver:$com_squareup_okhttp3"
+    testImplementation "com.squareup.okhttp3:mockwebserver:$comSquareupOkHTTP3"
     testImplementation 'com.jraska.livedata:testing-ktx:1.3.0'
     testImplementation 'androidx.arch.core:core-testing:2.2.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.2'
     testImplementation 'com.facebook.soloader:soloader:0.11.0'
-    debugImplementation("androidx.fragment:fragment-testing:$androidx_fragment")
+    debugImplementation("androidx.fragment:fragment-testing:$androidxFragment")
     testImplementation 'commons-io:commons-io:2.16.1'
 
     // Android testing
@@ -166,7 +166,7 @@ dependencies {
     androidTestImplementation 'androidx.test:rules:1.5.0'
     androidTestImplementation 'androidx.test:core:1.5.0'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation "androidx.annotation:annotation:$androidx_annotation"
+    androidTestImplementation "androidx.annotation:annotation:$androidxAnnotation"
     androidTestImplementation 'com.squareup.okhttp3:mockwebserver:4.12.0'
     androidTestImplementation 'androidx.test.uiautomator:uiautomator:2.3.0'
     androidTestUtil 'androidx.test:orchestrator:1.4.2'
@@ -186,43 +186,43 @@ dependencies {
     implementation 'com.daimajia.swipelayout:library:1.2.0@aar'
 
     //Room
-    implementation "androidx.room:room-runtime:$androidx_room"
-    implementation "androidx.room:room-ktx:$androidx_room"
-    implementation "androidx.room:room-rxjava2:$androidx_room"
-    ksp "androidx.room:room-compiler:$androidx_room"
+    implementation "androidx.room:room-runtime:$androidxRoom"
+    implementation "androidx.room:room-ktx:$androidxRoom"
+    implementation "androidx.room:room-rxjava2:$androidxRoom"
+    ksp "androidx.room:room-compiler:$androidxRoom"
     testImplementation 'androidx.arch.core:core-testing:2.2.0'
 
     // Pref
     // Java language implementation
-    implementation "androidx.preference:preference:$androidx_preference"
+    implementation "androidx.preference:preference:$androidxPreference"
     // Kotlin
-    implementation "androidx.preference:preference-ktx:$androidx_preference"
+    implementation "androidx.preference:preference-ktx:$androidxPreference"
     //Android Media
     implementation 'com.github.juanitobananas:AndroidMediaUtil:v1.0-1'
 
     implementation 'androidx.multidex:multidex:2.0.1'
 
     // Kotlin + coroutines
-    implementation "androidx.work:work-runtime-ktx:$androidx_work"
-    implementation("androidx.work:work-runtime:$androidx_work")
-    testImplementation "androidx.work:work-testing:$androidx_work"
+    implementation "androidx.work:work-runtime-ktx:$androidxWork"
+    implementation("androidx.work:work-runtime:$androidxWork")
+    testImplementation "androidx.work:work-testing:$androidxWork"
 
     //Glide
     implementation 'com.github.bumptech.glide:glide:4.16.0'
     ksp 'com.github.bumptech.glide:compiler:4.16.0'
-    ksp "androidx.databinding:databinding-compiler:$androidx_databinding"
-    kaptTest "androidx.databinding:databinding-compiler:$androidx_databinding"
-    kaptAndroidTest "androidx.databinding:databinding-compiler:$androidx_databinding"
+    ksp "androidx.databinding:databinding-compiler:$androidxDatabinding"
+    kaptTest "androidx.databinding:databinding-compiler:$androidxDatabinding"
+    kaptAndroidTest "androidx.databinding:databinding-compiler:$androidxDatabinding"
 
     implementation("io.github.coordinates2country:coordinates2country-android:1.6") { exclude group: 'com.google.android', module: 'android' }
 
     //OSMDroid
     implementation("org.osmdroid:osmdroid-android:6.1.18")
     constraints {
-        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:$org_jetbrains_kotlin") {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:$orgJetBrainsKotlin") {
             because("kotlin-stdlib-jdk7 is now a part of kotlin-stdlib")
         }
-        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$org_jetbrains_kotlin") {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$orgJetBrainsKotlin") {
             because("kotlin-stdlib-jdk8 is now a part of kotlin-stdlib")
         }
     }
@@ -333,9 +333,9 @@ android {
     }
 
     configurations.all {
-        resolutionStrategy.force "androidx.annotation:annotation:$androidx_annotation"
+        resolutionStrategy.force "androidx.annotation:annotation:$androidxAnnotation"
         resolutionStrategy.force 'com.jakewharton.timber:timber:5.0.1'
-        resolutionStrategy.force "androidx.fragment:fragment:$androidx_fragment"
+        resolutionStrategy.force "androidx.fragment:fragment:$androidxFragment"
         exclude module: 'okhttp-ws'
     }
     flavorDimensions 'tier'
