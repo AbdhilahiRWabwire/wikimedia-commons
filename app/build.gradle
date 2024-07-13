@@ -80,7 +80,7 @@ dependencies {
     androidTestImplementation "androidx.compose.ui:ui-test:$androidxCompose"
     androidTestImplementation "androidx.navigation:navigation-testing:$androidxNavigation"
     androidTestImplementation "androidx.test:core-ktx:$androidxTest"
-    androidTestImplementation "androidx.test.services:storage:1.4.2"
+    androidTestImplementation "androidx.test.services:storage:1.5.0"
     androidTestImplementation "androidx.test.services:test-services:$androidxTestServices"
     androidTestImplementation 'androidx.test.uiautomator:uiautomator:2.3.0'
     testImplementation "org.jetbrains.kotlin:kotlin-test:$orgJetBrainsKotlin"
