@@ -152,7 +152,7 @@ dependencies {
 
     // Unit testing
     testImplementation 'junit:junit:4.13.2'
-    testImplementation 'org.robolectric:robolectric:4.12.2'
+    testImplementation 'org.robolectric:robolectric:4.13'
     testImplementation "androidx.test:core:$androidxTest"
     testImplementation "androidx.test:rules:$androidxTest"
     testImplementation "androidx.test:runner:$androidxTest"
