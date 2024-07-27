@@ -17,12 +17,12 @@ if (isRunningOnTravisAndIsNotPRBuild) {
     apply plugin: 'com.github.triplet.play'
 }
 
-final androidxAnnotation = "1.8.0"
+final androidxAnnotation = "1.8.1"
 final androidxCompose = "1.6.8"
 final androidxDatabinding = "8.5.1"
-final androidxFragment = "1.8.1"
+final androidxFragment = "1.8.2"
 final androidxLifecycle = "2.8.3"
-final androidxPaging = "3.3.0"
+final androidxPaging = "3.3.1"
 final androidxPreference = "1.2.1"
 final androidxNavigation = "2.7.7"
 final androidxRoom = "2.6.1"
@@ -59,7 +59,7 @@ dependencies {
     implementation "androidx.navigation:navigation-common-ktx:$androidxNavigation"
     implementation "androidx.navigation:navigation-compose:$androidxNavigation"
     implementation "androidx.navigation:navigation-ui-ktx:$androidxNavigation"
-    implementation 'androidx.paging:paging-compose:3.3.0'
+    implementation "androidx.paging:paging-compose:$androidxPaging"
     implementation 'com.google.android.material:compose-theme-adapter:1.2.1'
     implementation 'com.google.android.material:compose-theme-adapter-3:1.1.1'
     implementation 'com.google.android.material:compose-theme-adapter-core:1.0.1'
@@ -106,7 +106,7 @@ dependencies {
     implementation 'com.jakewharton.rxbinding2:rxbinding-appcompat-v7:2.2.0'
     implementation 'com.jakewharton.rxbinding2:rxbinding-design:2.2.0'
     implementation 'com.facebook.fresco:fresco:3.2.0'
-    implementation 'org.apache.commons:commons-lang3:3.14.0'
+    implementation 'org.apache.commons:commons-lang3:3.15.0'
 
     // UI
     implementation 'fr.avianey.com.viewpagerindicator:library:2.4.1.1@aar'
@@ -152,7 +152,7 @@ dependencies {
 
     // Unit testing
     testImplementation 'junit:junit:4.13.2'
-    testImplementation 'org.robolectric:robolectric:4.12.2'
+    testImplementation 'org.robolectric:robolectric:4.13'
     testImplementation "androidx.test:core:$androidxTest"
     testImplementation "androidx.test:rules:$androidxTest"
     testImplementation "androidx.test:runner:$androidxTest"
