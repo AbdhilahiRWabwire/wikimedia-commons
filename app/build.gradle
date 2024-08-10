@@ -17,7 +17,7 @@ if (isRunningOnTravisAndIsNotPRBuild) {
     apply plugin: 'com.github.triplet.play'
 }
 
-final androidxAnnotation = "1.8.1"
+final androidxAnnotation = "1.8.2"
 final androidxCompose = "1.6.8"
 final androidxDatabinding = "8.5.1"
 final androidxFragment = "1.8.2"
