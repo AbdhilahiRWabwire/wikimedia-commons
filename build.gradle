@@ -9,7 +9,7 @@ buildscript {
         classpath 'com.android.tools.build:gradle:8.5.2'
         classpath 'com.getkeepsafe.dexcount:dexcount-gradle-plugin:4.0.0'
         classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:2.0.10'
-        classpath 'org.codehaus.groovy:groovy-all:3.0.21'
+        classpath 'org.codehaus.groovy:groovy-all:3.0.22'
     }
 }
 
