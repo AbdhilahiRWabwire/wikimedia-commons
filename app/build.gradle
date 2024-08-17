@@ -36,7 +36,7 @@ final adapterDelegates4 = "4.3.2"
 final comSquareupOkHTTP3 = "4.12.0"
 final orgJetBrainsKotlin = "2.0.10"
 final orgJetBrainsKotlinxCoroutines = "1.9.0-RC"
-final orgJetBrainsKotlinxIO = "0.5.1"
+final orgJetBrainsKotlinxIO = "0.5.2"
 final orgJetBrainsKotlinxSerialization = "1.7.1"
 final orgJUnitJupiter = "5.10.3"
 
