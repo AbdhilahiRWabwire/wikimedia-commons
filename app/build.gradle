@@ -145,7 +145,7 @@ dependencies {
     // Logging
     implementation 'ch.acra:acra-dialog:5.11.3'
     implementation 'ch.acra:acra-mail:5.11.3'
-    implementation 'org.slf4j:slf4j-api:2.0.13'
+    implementation 'org.slf4j:slf4j-api:2.0.16'
     api('com.github.tony19:logback-android-classic:1.1.1-6') {
         exclude group: 'com.google.android', module: 'android'
     }
