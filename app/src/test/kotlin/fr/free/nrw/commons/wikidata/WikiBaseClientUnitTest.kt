@@ -13,6 +13,7 @@ import junit.framework.TestCase.assertEquals
 import junit.framework.TestCase.assertSame
 import junit.framework.TestCase.assertTrue
 import org.junit.Before
+import org.junit.Ignore
 import org.junit.Test
 import org.mockito.Mockito.mock
 
@@ -77,7 +78,7 @@ class WikiBaseClientUnitTest {
             "M123", "test", "en", "caption"
         )).thenReturn(Observable.just(mwPostResponse))
 
-        val result = wikiBaseClient.addLabelstoWikidata(123L, "en", "caption").blockingFirst()
+        val result = wikiBaseClient.addLabelsToWikidata(123L, "en", "caption").blockingFirst()
 
         assertSame(mwPostResponse, result)
     }

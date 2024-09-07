@@ -325,9 +325,9 @@ public class AchievementsFragment extends CommonsDaggerSupportFragment {
             getString(R.string.ok),
             () -> {},
             true);
-        binding.imagesUploadedProgressbar.setVisibility(View.INVISIBLE);
-        binding.imageRevertsProgressbar.setVisibility(View.INVISIBLE);
-        binding.imagesUsedByWikiProgressBar.setVisibility(View.INVISIBLE);
+//        binding.imagesUploadedProgressbar.setVisibility(View.INVISIBLE);
+//        binding.imageRevertsProgressbar.setVisibility(View.INVISIBLE);
+//        binding.imagesUsedByWikiProgressBar.setVisibility(View.INVISIBLE);
         binding.achievementBadgeImage.setVisibility(View.INVISIBLE);
         binding.imagesUsedByWikiText.setText(R.string.no_image);
         binding.imagesRevertedText.setText(R.string.no_image_reverted);
@@ -342,8 +342,8 @@ public class AchievementsFragment extends CommonsDaggerSupportFragment {
     private void setImageRevertPercentage(int notRevertPercentage){
         binding.imageRevertsProgressbar.setVisibility(View.VISIBLE);
         binding.imageRevertsProgressbar.setProgress(notRevertPercentage);
-        String revertPercentage = Integer.toString(notRevertPercentage);
-        binding.imageRevertsProgressbar.setProgressTextFormatPattern(revertPercentage + "%%");
+        final String revertPercentage = Integer.toString(notRevertPercentage);
+        binding.tvRevertedImages.setText(revertPercentage + "%");
         binding.imagesRevertLimitText.setText(getResources().getString(R.string.achievements_revert_limit_message)+ levelInfo.getMinNonRevertPercentage() + "%");
     }
 
@@ -353,14 +353,12 @@ public class AchievementsFragment extends CommonsDaggerSupportFragment {
      * @param achievements
      */
     private void inflateAchievements(Achievements achievements) {
-        binding.imagesUsedByWikiProgressBar.setVisibility(View.VISIBLE);
+//        binding.imagesUsedByWikiProgressBar.setVisibility(View.VISIBLE);
         binding.thanksReceived.setText(String.valueOf(achievements.getThanksReceived()));
         binding.imagesUsedByWikiProgressBar.setProgress
                 (100 * achievements.getUniqueUsedImages() / levelInfo.getMaxUniqueImages());
-        if(binding.tvWikiPb != null) {
-            binding.tvWikiPb.setText
-                (achievements.getUniqueUsedImages() + "/" + levelInfo.getMaxUniqueImages());
-        }
+        binding.tvWikiPb.setText(achievements.getUniqueUsedImages() + "/"
+            + levelInfo.getMaxUniqueImages());
         binding.imageFeatured.setText(String.valueOf(achievements.getFeaturedImages()));
         binding.qualityImages.setText(String.valueOf(achievements.getQualityImages()));
         String levelUpInfoString = getString(R.string.level).toUpperCase();
