@@ -18,7 +18,7 @@ if (isRunningOnTravisAndIsNotPRBuild) {
 }
 
 final androidxAnnotation = "1.8.2"
-final androidxCompose = "1.6.8"
+final androidxCompose = "1.7.1"
 final androixComposeCompiler = "1.5.15"
 final androidxDatabinding = "8.5.1"
 final androidxFragment = "1.8.2"
